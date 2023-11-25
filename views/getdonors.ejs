@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getdonors|snapaid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/javascripts/getdonors.js"></script>
+</head>
+<style>
+  *{
+    overflow-x: hidden;
+    /* CSS styles for scrollbar */
+        /* width */
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+  }
+</style>
+<body>
+    <!-- wrapper -->
+    <div class="h-[100vh] w-[100vw] ">
+        <!-- nav starts -->
+      <nav class="flex items-center justify-between px-[3%] text-[20px] h-[80px] w-full text-[#2e2e2e]"> 
+        <h1 class="text-[30px] text-[#17324a] font-bold">Blood <span class="text-[#1DB1C5]">Link</span></h1>
+        <ul class="md:flex gap-16 hidden cursor-pointer ">
+         <a href="/"> <li class="hover:text-[#1DB1C5] px-4 py-2 rounded-3xl ">Home</li></a>
+         <a href="#urgency"><li class=" bg-[#1DB1C5] px-4 py-2 rounded-3xl transition-all duration-2000">Urgency</li></a>
+           <a href="/blogs"> <li class="hover:text-[#1DB1C5] px-4 py-2 rounded-3xl">Blogs</li></a>
+         <a href="#footer"> <li class="hover:text-[#1DB1C5] px-4 py-2 rounded-3xl">About Us</li></a>
+          <a href="#footer"> <li class="hover:text-[#1DB1C5] px-4 py-2 rounded-3xl">Contact Us</li></a>
+         
+         
+        </ul>
+        
+      </nav>
+      
+      <!-- nav ends here -->
+      <!--main body -->
+      <div>
+        <!-- Add an empty container to display the donor cards -->
+<div>
+  <div><h1 class="text-center bg-[#1DB1C5] text-[55px] font-bold text-white">Our Heros</h1></div>
+   <div><h1 class="text-center bg-[#1DB1C5] text-[35px] font-bold text-white">(Press CTRL+F and search donor by blood)</h1></div>
+  <div id="donorsContainer" class="flex flex-wrap justify-center gap-24 mt-8 py-[3%]"></div>
+  
+
+</div>
+
+      </div>
+      
+    </div>
+</body> 
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beadonor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- wrapper -->
+    <div class=" min-h-[100vh] w-[100vw]  flex items-center flex-col justify-evenly gap-[5%]">
+          <h1 class="text-[45px] md:text-[65px] text-center font-bold">Be a <span class="text-[#1DB1C5] ">Donor</span></h1>
+          <br><br>
+          <!-- donor form -->
+          <form action="http://localhost:3000/submit-form" method="POST" class="min-h-[600px] w-[600px] rounded-lg   drop-shadow-2xl bg-[#F7F8FC] flex flex-col py-[4%] gap-8 ">
+            <!-- first field -->
+          <div class="flex justify-center items-center"> 
+            <img src="/images/name.png" alt="name icon" class="h-[60px]">
+             <input type="text" name="name" required placeholder="Enter your name" id="" class="h-[50px] w-[250px] md:w-[450px] rounded-lg px-4 o outline-none"></div>
+             <!-- sec field -->
+             <div class="flex justify-center items-center"> 
+            <img src="/images/pn.png" alt="name icon" class="h-[60px]">
+             <input type="text"name="phoneNumber" maxlength="10" required placeholder="Enter phone number" id="" class="h-[50px] w-[250px] md:w-[450px] rounded-lg px-4 o outline-none"></div>
+             <!-- third -->
+             <div class="flex justify-center items-center"> 
+            <img src="/images/icons8-mail-60.png" alt="name icon" class="h-[60px]">
+             <input type="mail" name="email" required placeholder="Enter Email here" id="" class="h-[50px] w-[250px] md:w-[450px] rounded-lg px-4 o outline-none"></div>
+             <!-- FORTH -->
+             <div class="md:flex md:flex-row flex flex-col justify-center items-center  gap-x-12 "> 
+            <DIV class="flex justify-center items-center">
+                <img src="/images/icons8-gender-64.png" alt="gender icon" class="h-[50px]">
+             <select id="gender" name="gender" class="h-[40px] w-[80px] outline-none">
+                <option value="" disabled selected> Gender</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  
+</select>
+            </DIV>
+<div class="flex justify-center items-center">
+    <img src="/images/bloodic.png" alt="blood icon" class="h-[60px]">
+             <select id="bloodGroup" name="bloodGroup" class="h-[40px] w-[100px] outline-none">
+                <option value="" disabled selected> Blood group</option>
+  <option value="o+">O+</option>
+  <option value="o">O-</option>
+  <option value="a+">A+</option>
+   <option value="a-">A-</option>
+    <option value="b-">B+</option>
+  <option value="b">B-</option>
+  <option value="ab+">AB+</option>
+  <option value="ab-">AB-</option>
+  
+</select>
+</div>
+
+<!-- state -->
+<div class="flex justify-center items-center">
+    <img src="/images/icons8-state-64.png" alt="state icon" class="h-[60px]">
+             <select id="state" name="state" class="h-[40px] w-[80px] outline-none">
+                 <option value="" disabled selected> State</option>
+   <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+  <option value="Assam">Assam</option>
+  <option value="Bihar">Bihar</option>
+  <option value="Chhattisgarh">Chhattisgarh</option>
+  <option value="Goa">Goa</option>
+  <option value="Gujarat">Gujarat</option>
+  <option value="Haryana">Haryana</option>
+  <option value="Himachal Pradesh">Himachal Pradesh</option>
+  <option value="Jharkhand">Jharkhand</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Madhya Pradesh">Madhya Pradesh</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Manipur">Manipur</option>
+  <option value="Meghalaya">Meghalaya</option>
+  <option value="Mizoram">Mizoram</option>
+  <option value="Nagaland">Nagaland</option>
+  <option value="Odisha">Odisha</option>
+  <option value="Punjab">Punjab</option>
+  <option value="Rajasthan">Rajasthan</option>
+  <option value="Sikkim">Sikkim</option>
+  <option value="Tamil Nadu">Tamil Nadu</option>
+  <option value="Telangana">Telangana</option>
+  <option value="Tripura">Tripura</option>
+  <option value="Uttar Pradesh">Uttar Pradesh</option>
+  <option value="Uttarakhand">Uttarakhand</option>
+  <option value="West Bengal">West Bengal</option>
+  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+  <option value="Lakshadweep">Lakshadweep</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Puducherry">Puducherry</option>
+  
+</select>
+</div>
+
+</DIV>
+ <div class="flex justify-center items-center"> 
+            <img src="/images/icons8-location-60.png" alt="loacation icon" class="h-[60px]">
+             <input type="text" name="address" placeholder="Enter address" id="" class="h-[50px] w-[250px] md:w-[450px] rounded-lg px-4 o outline-none"></div>
+             <!-- submit -->
+            <div class="w-full flex justify-center">
+                 <button type="submit" class="bg-[#1DB1C5] h-[50px] w-[120px] rounded-md text-white text-[22px] ">SUBMIT</button>
+            </div>
+          </form>
+          <!--  -->
+          <br><br>
+           <!-- footer -->
+          
+    <footer id="footer" class="w-full py-[3%]  bg-[#1DB1C5] h-[350px]">
+      
+    <div class="w-full h-full grid grid-rows-4 grid-cols-2 text-center gap-1">
+    <div class="text-[22px] font-semibold text-white">Menu</div>
+    <div class="text-[22px] font-semibold text-white">Services</div>
+    <div class="text-white text-[20px]"><a href="">About Us</a></div>
+    <div class="text-white text-[20px]"><a href="">Blogs</a></div>
+    <div class="text-white text-[20px]"><a href="">Founders</a></div>
+   <div id="footer" class="text-white text-[20px]">Contact us</div></a>
+    <div class="text-white text-[20px]"><a href="">Health</a></div>
+    <div class="text-white text-[20px]"><a href="">Fitness</a></div>
+</div>
+ <hr class="w-full bg-[#E5E7EB]">
+ 
+<h1 class="text-center text-[20px] md:text-[25px] w-full bg-[#1DB1C5] text-white">Copyrights © and all rights reserved @SnapAid 2023</h1>
+
+
+    </footer>
+    </div>
+</body>
+</html>

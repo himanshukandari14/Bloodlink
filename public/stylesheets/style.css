@@ -1,0 +1,91 @@
+*{
+  scroll-behavior: smooth;
+  user-select: none;
+}
+body{
+  font-family: 'Archivo', sans-serif;
+  overflow-x: hidden;
+}
+ /* CSS styles for scrollbar */
+        /* width */
+        ::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+/* mobmenu open animation */
+   .mobmenuopen{
+    animation-name: slide;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform-origin: center; /* Set the transform origin to the top right */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+       
+    }
+    to {
+         transform: translateX(0%);
+       
+       
+    }
+}
+
+/* mob menu close animation */
+   .mobmenuopenclose{
+    animation-name: slideoff;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform-origin: center; /* Set the transform origin to the top right */
+}
+
+@keyframes slideoff {
+    from {
+        transform: translateX(0%);
+       
+    }
+    to {
+         transform: translateX(100%);
+       
+       
+    }
+}
+#banner{
+  background-image: url('/images/don1.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: color 2.5s ; 
+  
+}
+
+  #banner:hover .bannertext {
+           scale: 1.2;
+           transition: all 2s;
+        }
+
+#mobmenuslider {
+  z-index: 10; /* Adjust the value based on your layout */
+}
+
+#banner {
+  z-index: 1; /* Ensure this is lower than the sliding menu */
+}
+
+/* Add a clearfix class to the parent element of floated elements */
